@@ -13,8 +13,8 @@
 <body>
 	<header>
 		<div id="logo">
-			<h1>Dragon</h1>
-			<span>blog sobre dragones</span>
+			<h1><a href="/"><?php wp_title(); ?></a></h1>
+			<span><?php wp_description(); ?></span>
 		</div>
 		<nav>
 			<?php 
