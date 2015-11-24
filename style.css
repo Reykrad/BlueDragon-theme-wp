@@ -1,0 +1,358 @@
+/*
+Theme Name: Dark Dragon
+Theme URL: www.reykrad.com
+Description: Descripcion del tema
+Version: 1
+Author: Reykrad
+Author URL: reykrad.blogspot.com
+*/
+
+/*Estilos generales alineaciones para el articulo*/
+.center {text-align: center;}
+img.center, img[align="center"] {display: block;margin-left: auto;margin-right: auto;}
+.alignleft {float: left;}
+img.alignleft, img[align="left"] {float:left;margin: 2px 10px 5px 0px;}
+.alignright {float: right;}
+img.alignright, img[align="right"] {float:right;margin: 2px 0px 5px 10px;}
+.clear {clear:both;}
+hr.clear {clear:both;visibility: hidden;margin: 0px;padding: 0px;height:0px;}
+
+#articles_list article p {
+	margin-bottom:15px;
+}
+
+/*---Estilos Generales---*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #303030;
+	font-size: 12pt;
+	font-family: 'Raleway', Helvetica, Arial;
+}
+
+header, #main, footer {
+	width:85%;
+	max-width:960px;
+	margin:0px auto;
+}
+
+a {
+	color: #008CFF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #00DDFF;
+}
+
+/*---Header---*/
+
+header {
+	margin-top:20px;
+	margin-bottom:20px;
+	overflow:hidden;
+	width:85%;
+}
+
+header #logo {
+	width: 40%;
+	float: left;
+}
+
+header #logo h1 {
+	font-size: 4em;
+	font-weight: 100;
+	text-align: left;
+	color: #D6D6D6;
+	margin: 0px;
+}
+
+header #logo span {
+	text-align:center; 
+	width:100%;
+	font-weight:400;
+	margin-bottom:10px;
+	margin-left: 5px;
+	color:#D6D6D6;
+}
+
+header nav {
+	width: 60%;
+	float: right;
+	padding: 10px 0px;
+	margin-top: 30px;
+}
+
+header nav ul {
+	float: right;
+}
+
+header nav ul li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+header nav ul li a {
+	font-weight: 300;
+	font-size: 1.3em;
+	color: #D6D6D6;
+}
+
+header nav ul li a:hover {
+	color: #008CFF;
+	text-decoration: none;
+}
+
+/*---Main---*/
+
+#main #articles_list {
+	clear: both;
+	width: 75%;
+	float: left;
+}
+
+#main #articles_list article {
+	margin-bottom: 40px;
+	margin-right: 4%;
+	padding-bottom: 40px;
+	border-bottom: 3px dashed #2A3E4F;
+	overflow: hidden;
+}
+
+#main #articles_list article .thumb {
+	width: 35%;
+	margin-right: 4%;
+	float: left;
+	margin-bottom: 2%;
+}
+
+#main #articles_list article .thumb img {
+	height: 100%;
+	width: 100%;
+}
+
+#main #articles_list article h2 {
+	font-size: 1.9em;
+	font-weight: 300;
+}
+
+#main #articles_list article h2 a {
+	color: #008CFF;
+}
+
+#main #articles_list article h2 a:hover {
+	text-decoration: none;
+	color: #00DDFF;
+}
+
+#main #articles_list article .extract {
+	text-align: justify;
+	font-size: 1.2em;
+	color: #D6D6D6;
+}
+
+#main #articles_list article .date {
+	font-size: .8em;
+	color: #777777;
+	margin-bottom: 10px;
+}
+
+#main #articles_list article .date ul {
+	display: inline-block;
+}
+
+#main #articles_list article .date ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+#main #articles_list #pagination {
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+#main #articles_list #pagination p {
+	text-align: center;
+}
+
+#main #articles_list #pagination p a {
+	margin: 0px  20px;
+	font-size: 1.5em;
+	font-weight: 300;
+	display: inline-block;
+}
+
+/*---Aside---*/
+
+#main aside {
+	width: 25%;
+	float: left;
+}
+
+#main .widget {
+	width: 100%;
+}
+
+.widget {
+	margin-bottom: 50px;
+	display: block;
+	float; left: 
+}
+
+.widget h3 {
+	font-size: 1.4em;
+	font-weight: 400;
+	color: #333333;
+	margin-bottom: 10px;
+}
+
+.widget ul li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.widget ul li a {
+	font-size: .9em;
+	color: #777777;
+}
+
+.widget ul li a:hover {
+	color: #bf2222;
+	text-decoration: none;
+}
+
+/*---Footer---*/
+
+footer {
+	width: 85%;
+	clear: both;
+}
+
+footer #ft_widgets {
+	width: 100%;
+}
+
+footer .widget {
+	width: 25%;
+	float: left;
+}
+
+footer #copyright {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	padding: 10px;
+	color: #333333;
+	font-size: .9em;
+}
+
+/*---Blog---*/
+
+#main #articles_list #cat_name {
+	font-size: 2em;
+	color: #333333;
+	font-weight: 500;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #333333;
+	margin-right: 30px;
+	padding-bottom: 10px;
+}
+
+/*---Single---*/
+
+#main #articles_list #comentarios {
+	margin-bottom: 40px;
+	margin-right: 4%;
+}
+
+#main #articles_list #comentarios > h3 {
+	font-size: 1.3em;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: #333333;
+}
+
+#main #articles_list #caja_comentarios {
+	background: #ccc;
+}
+
+#main #articles_list img {
+	width: 100%;
+	margin: 10px 0px;
+}
+
+
+/*---Estilos de los comentarios---*/
+.commentlist li {
+  list-style: none !important;
+}
+
+
+.comment-body {
+  padding: 15px;
+}
+
+.comment-author {
+  margin-top: 5px;
+}
+
+.reply,  .commentmetadata {
+  font-size: 0.9em;
+}
+
+
+.depth-1, .depth-2, .depth-3, .depth-4 {
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
+
+.depth-1, .depth-3 {
+  background-color: #fafafa;
+}
+
+.depth-2, .depth-4 {
+   background-color: #fff;
+}
+
+.comment-author-eSandra {
+  border: 3px solid #eaeaea;
+  border-left:3px solid #fbc356;
+}
+
+.depth-1 {
+   margin: 20px 0;
+}
+/* Respuesta a comentarios*/
+
+
+.depth-2 {
+  margin:2% 5% !important;
+}
+
+.depth-3 {
+   margin: 2% 7% !important;
+}
+
+
+.depth-4 {
+  margin:2% 5% 4% 10% !important;
+}0
+1
++
+#comment, #author, #email {
+  border-radius: 4px;
+  border:2px solid #ccc;
+}
+
+.commentlist img {
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}/* imagen que sale arriba delos comentarios*/
