@@ -69,7 +69,7 @@ header #logo h1 {
 	font-weight: 100;
 	text-align: left;
 	color: #D6D6D6;
-	text-shadow: 2px 2px 2px #000;
+	text-shadow: 2px 2px 4px #000;
 	margin: 0px;
 }
 
@@ -88,7 +88,7 @@ header #logo span {
 	margin-bottom:10px;
 	margin-left: 5px;
 	color:#8A8A8A;
-	border-left: 4px solid #8b8b8b;
+	border-left: 4px solid #4F008C;
 	padding-left: 5px;
 }
 
@@ -115,24 +115,18 @@ header nav ul li a {
 	font-size: 1.3em;
 	color: #D6D6D6;
 	padding: 7px;
-	background: #4E1878;
-	border: 2px solid #7900D6;
+	border: 2px solid #4F008C;
 	display: inline-block;
 	border-radius: 99px;
-	text-shadow: 2px 2px 1px #000;
-	-webkit-transition: .4s linear;
-	-o-transition: .4s linear;
-	transition: .4s linear;
+	text-shadow: 2px 2px 2px #000;
+	-webkit-transition: .3s linear;
+	-o-transition: .3s linear;
+	transition: .3s linear;
 }
 
 header nav ul li a:hover {
 	color: #008CFF;
-	-webkit-transform: rotate(7deg);
-	-ms-transform: rotate(7deg);
-	-o-transform: rotate(7deg);
-	transform: rotate(7deg);
-	border: 2px solid #984AD4;
-	background: #653E82;
+	border: 2px solid #6E00C2;
 }
 
 /*---Main---*/
@@ -147,15 +141,22 @@ header nav ul li a:hover {
 	margin-bottom: 40px;
 	margin-right: 4%;
 	padding-bottom: 40px;
-	border-bottom: 3px dashed #2A3E4F;
+	border-bottom: 4px dashed #2A3E4F;
 	overflow: hidden;
+	-webkit-transition: .3s linear;
+	-o-transition: .3s linear;
+	transition: .3s linear;
+}
+
+#main #articles_list article:hover {
+	border-bottom: 4px dashed #496985;
 }
 
 #main #articles_list article .thumb {
 	width: 35%;
-	margin-right: 4%;
+	margin-right: 3%;
 	float: left;
-	margin-bottom: 2%;
+	margin-bottom: 0;
 }
 
 #main #articles_list article .thumb img {
@@ -170,6 +171,9 @@ header nav ul li a:hover {
 
 #main #articles_list article h2 a {
 	color: #008CFF;
+	-webkit-transition: .3s linear;
+	-o-transition: .3s linear;
+	transition: .3s linear;
 }
 
 #main #articles_list article h2 a:hover {
@@ -218,6 +222,11 @@ header nav ul li a:hover {
 	display: inline-block;
 }
 
+#main #articles_list h3 {
+	color: #8A8A8A;
+	font-weight: none;
+	font-size: 1.3em;
+}
 /*---Aside---*/
 
 #main aside {
@@ -227,9 +236,9 @@ header nav ul li a:hover {
 
 #main .widget {
 	width: 100%;
-	border-bottom: 1px solid #444;
-	margin: 10px 0;
-	padding: 10px 0;
+	border-bottom: 2px dashed #444;
+	margin-bottom: 20px;
+	padding-bottom: 20px;	
 }
 
 .widget {
@@ -273,7 +282,7 @@ header nav ul li a:hover {
 }
 
 .widget #s {
-	width: 90%;
+	width: 94%;
 	padding: 5px;
 	font-size: 1em;
 	color: #444;
@@ -282,6 +291,7 @@ header nav ul li a:hover {
 	border: 3px solid #444;
 	border-radius: 5px;
 	float: left;
+	margin-bottom: 20px;
 }
 
 .widget #s:focus {
@@ -289,17 +299,20 @@ header nav ul li a:hover {
 	border: 3px solid #222;
 }
 
+.widget #searchform {
+	margin: 0px;
+	padding: 0px;
+}
 /*nube de etiquetas*/
 .widget .tagcloud a {
 	-webkit-transition: .4s linear;
 	-o-transition: .4s linear;
 	transition: .4s linear;
 	padding: 5px;
-	border: 2px solid #7900D6;
+	border: 2px solid #4F008C;
 	display: inline-block;
 	margin: 2px 0;
 	border-radius: 99px;
-	background: #4E1878;
 	font-weight: bold;
 }
 
@@ -308,8 +321,23 @@ header nav ul li a:hover {
 	-ms-transform: rotate(7deg);
 	-o-transform: rotate(7deg);
 	transform: rotate(7deg);
-	border: 2px solid #984AD4;
-	background: #653E82;
+	border: 2px solid #6E00C2;
+}
+
+.widget ul li a{
+	-webkit-transition: .4s linear;
+	-o-transition: .4s linear;
+	transition: .4s linear;
+	display: inline-block;
+	width: 88%;
+	padding: 15px 10px;
+	background: #3B3B3B;
+	border-left: 8px solid #4F008C;
+}
+
+.widget ul li a:hover {
+	border-left: 8px solid #6E00C2;
+	background: #454545;
 }
 
 /*---Footer---*/
@@ -333,8 +361,8 @@ footer #copyright {
 	clear: both;
 	text-align: center;
 	padding: 10px;
-	color: #333333;
-	font-size: .9em;
+	color: #8A8A8A;
+	font-size: 1em;
 }
 
 /*---Blog---*/

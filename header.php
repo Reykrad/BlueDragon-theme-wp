@@ -13,8 +13,8 @@
 <body>
 	<header>
 		<div id="logo">
-			<h1><a href="/"><?php wp_title(); ?></a></h1>
-			<span><?php wp_description(); ?></span>
+			<h1><a href="http://127.0.0.1/wor1/"><?php bloginfo('name'); ?></a></h1>
+			<span><?php bloginfo('description'); ?></span>
 		</div>
 		<nav>
 			<?php 

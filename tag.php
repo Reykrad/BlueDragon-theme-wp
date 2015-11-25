@@ -6,7 +6,7 @@
 		<?php  if (is_category()) { ?>
 			<h3>Categoria <?php single_cat_title(); ?></h3>
 		<?php } elseif( is_tag() ) { ?>
-			<h2>Etiqueta <?php single_tag_title(); ?></h2>
+			<h3>Etiqueta <?php single_tag_title(); ?></h3>
 		<?php }; ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<article>
