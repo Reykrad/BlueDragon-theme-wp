@@ -12,11 +12,12 @@
 				</div>
 				<hgroup><h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2></hgroup>
 				<div class="date">
-				<a href=""><?php the_author_posts_link(); ?></a>: <?php the_time('F j, Y') ?> en <span><?php the_category();?></span></div>
+					<a href=""><?php the_author_posts_link(); ?></a>: <?php the_time('F j, Y') ?> en <span><?php the_category(' • ') ;?></span>
+				</div>
 				<div class="extract"><?php the_excerpt();?></div>
 				<div class="pie_post">
-					<span><?php the_tags( 'Etiquetas: ', ' • ', '<br />' ); ?></span><!--tags, quitar despues-->
-					<p><?php comments_number( '0 Comentarios', 'Un Comentario', '% Comentarios' ); ?></p><!--contador de comentarios-->
+					<span><?php the_tags( 'Etiquetas: ', ' • ', '<br />' ); ?></span>
+					<p><?php comments_number( '0 Comentarios', 'Un Comentario', '% Comentarios' ); ?></p>
 				</div>
 			</article>
 		<?php endwhile; else: ?>

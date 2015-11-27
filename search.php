@@ -15,9 +15,9 @@
           <a href="http://twitter.com/reykrad"><?php the_author_posts_link(); ?></a>: <?php the_time('F j, Y') ?> en <span><?php the_category();?></span></div>
           <div class="extract"><?php the_excerpt();?></div>
           <div class="pie_post">
-            <span><?php the_tags( 'Etiquetas: ', ' • ', '<br />' ); ?></span><!--tags, quitar despues-->
-            <p><?php comments_number( '0 Comentarios', 'Un Comentario', '% Comentarios' ); ?></p><!--contador de comentarios-->
-          </div>
+          <span><?php the_tags( 'Etiquetas: ', ' • ', '<br />' ); ?></span>
+          <p><?php comments_number( '0 Comentarios', 'Un Comentario', '% Comentarios' ); ?></p>
+        </div>
         </article>
       <?php endwhile; ?>
       <?php if (function_exists("pagination")) {

@@ -19,8 +19,8 @@
 				<div class="date"><?php the_author_posts_link(); ?>: <?php the_time('jS F Y') ?> en <span><?php the_category();?></span></div>
 				<div class="extract"><?php the_excerpt();?></div>
 				<div class="pie_post">
-					<span><?php the_tags( 'Tagged with: ', ' • ', '<br />' ); ?></span><!--tags, quitar despues-->
-					<p><?php comments_number( '0 Comentarios', 'Un Comentario', '% Comentarios' ); ?></p><!--contador de comentarios-->
+					<span><?php the_tags( 'Etiquetas: ', ' • ', '<br />' ); ?></span>
+					<p><?php comments_number( '0 Comentarios', 'Un Comentario', '% Comentarios' ); ?></p>
 				</div>
 			</article>
 		<?php endwhile; else: ?>

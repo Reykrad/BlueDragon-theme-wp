@@ -40,7 +40,6 @@ $buttons[] = 'fontselect';
 $buttons[] = 'fontsizeselect';
 $buttons[] = 'cleanup';
 $buttons[] = 'styleselect';
-$buttons[] = 'code';
 return $buttons;
 }
 add_filter("mce_buttons_3", "habilitar_mas_botones");
