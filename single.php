@@ -11,7 +11,7 @@
 			<div class="pie_post">
 				<span><?php the_tags( 'Etiquetas: ', ' • ', '<br />' ); ?></span>
 			</div>
-			<div id="autor_post">
+			<div id="autor_art">
 				<div id="infoautor">
 					<div id="avatar">
 						<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'author_bio_avatar_size', 60 ) ); ?>

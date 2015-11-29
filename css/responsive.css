@@ -2,20 +2,18 @@
 
 @media screen and (max-width: 1024px) {
 	header nav ul li {
-		margin: 0px 5px 10px 0px;
-		background: #bf2222;
-		padding: 10px;
+		margin-left: 5px;
 	}
 
-	header nav ul li a:hover {
-		color: #fff;
-	}
-
-	#main #articles_list #pagination p a {
+	#pagination p a {
 		margin: 10px 20px 10px 20px;
-		background: #bf2222;
-		color: #fff;
+		border: 2px solid #444;
+		border-radius: 5px;
 		padding: 10px;
+	}
+
+	#pagination p a:hover {
+		border: 2px solid #555;
 	}
 
 	footer .widget {
@@ -28,11 +26,20 @@
 	}
 }
 
+@media screen and (max-width: 900px) {
+	#main {
+		width: 95%;
+	}
+
+	header {
+		width: 95%;
+	}
+}
+
 /*---Medida para Tablets en Vertical---*/
 @media screen and (max-width: 768px) {
 	header #logo {
 		width: 100%;
-		background: #333333;
 		text-align: center;
 	}
 
@@ -53,15 +60,31 @@
 	#main #articles_list {
 		width: 100%;
 	}
+	
+	#main #articles_list article {
+		margin-right: 0px;
+	}
 
 	#main aside {
 		width: 100%;
 		clear: both;
 	}
 
-	.widget {
+	#main aside .widget {
 		margin-bottom: 40px;
 		width: 100%;
+	}
+
+	#main aside .widget ul li a {
+		margin-right: 0px;
+		width: 97%;
+		padding: 15px 1%;
+		border-left: 1% solid #FF5500;
+	}
+
+	#commentform textarea {
+		width: 100%;
+		max-width: 500px;
 	}
 }
 
@@ -72,8 +95,48 @@
 		float: left;
 		margin-bottom: 20px;
 	}
-
-	footer .widget {
+	
+	#commentform input {
 		width: 100%;
+		max-width: 500px;
+	}
+
+	#main #avatar {
+		width: 50%;
+		float: left;
+		margin-bottom: 10px;
+	}
+
+	#main #info {
+		width: 100%;
+		float: left;
+	}
+
+	#main #autor_page {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	#main #autor_page #autor_post article {
+		width: 97%;
+		padding: 10px 1%;
+		margin: 10px 0px;
+		background: #3B3B3B;
+		color: #8A8A8A;
+		border-radius: 10px;
+	}
+
+	#main #infoautor {
+		width: 100%;
+	}
+
+	#main #info p {
+		width: 100%;
+	}
+
+	#main #articles_list #autor_art {
+		width: 98%;
+		margin-top: 20px;
+		padding: 1%;
 	}
 }

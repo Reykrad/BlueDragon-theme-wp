@@ -16,7 +16,7 @@
 					</a>
 				</div>
 				<hgroup><h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2></hgroup>
-				<div class="date"><?php the_author_posts_link(); ?>: <?php the_time('jS F Y') ?> en <span><?php the_category();?></span></div>
+				<div class="date"><?php the_author_posts_link(); ?>: <?php the_time('F j, Y') ?> en <span><?php the_category(' • ');?></span></div>
 				<div class="extract"><?php the_excerpt();?></div>
 				<div class="pie_post">
 					<span><?php the_tags( 'Etiquetas: ', ' • ', '<br />' ); ?></span>

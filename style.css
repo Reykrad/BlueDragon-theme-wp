@@ -99,7 +99,7 @@ header nav {
 	width: 60%;
 	float: right;
 	padding: 10px 0px;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 
 header nav ul {
@@ -209,10 +209,6 @@ header nav ul li a:hover {
 	font-size: 1em;
 }
 
-#main #articles_list article .pie_post p {
-	background: red;
-}
-
 #pagination {
 	margin-bottom: 40px;
 	width: 100%;
@@ -251,7 +247,7 @@ header nav ul li a:hover {
 .widget {
 	margin-bottom: 50px;
 	display: block;
-	float; left: 
+	float; left;
 }
 
 .widget h3 {
@@ -289,8 +285,8 @@ header nav ul li a:hover {
 }
 
 .widget #s {
-	width: 94%;
-	padding: 5px;
+	width: 97%;
+	padding: 1%;
 	font-size: 1em;
 	color: #444;
 	background: #ccc;
@@ -335,9 +331,9 @@ header nav ul li a:hover {
 	-o-transition: .4s linear;
 	transition: .4s linear;
 	display: inline-block;
-	width: 88%;
-	padding: 15px 10px;
 	background: #3B3B3B;
+	width: 95%;
+	padding: 15px 1%;
 	border-left: 8px solid #FF5500;
 }
 
@@ -409,6 +405,44 @@ footer #copyright {
 
 
 /*---Estilos de los comentarios---*/
+#commentform p {
+	margin-bottom: 10px;
+}
+
+#commentform input {
+	background: #ccc;
+	color: #444;
+	border: 3px solid #444;
+	padding: 3px;
+}
+
+#commentform textarea {
+	background: #ccc;
+	color: #444;
+	border: 3px solid #444;
+	padding: 3px;
+}
+
+#commentform input:focus {
+	border: 3px solid #222;
+	outline: none;
+}
+
+#commentform textarea:focus {
+	border: 3px solid #222;
+	outline: none;
+}
+
+#commentform #submit {
+	padding: 5px;
+	border:none;
+}
+
+#commentform #submit:hover {
+	background: #444;
+	color: #ccc;
+}
+
 .commentlist li {
   list-style: none !important;
 }
@@ -563,7 +597,7 @@ footer #copyright {
 
 
 /* Estilos seccion de autor post*/
-#main #articles_list #autor_post {
+#main #articles_list #autor_art {
 	width: 98%;
 	background: #3D3D3D;
 	padding-right: 0px;
@@ -572,15 +606,15 @@ footer #copyright {
 	border-radius: 20px;
 }
 
-#main #articles_list #autor_post #infoautor {
+#main #articles_list #autor_art #infoautor {
 	border: none;
 	margin: 0px;
 }
 
-#main #articles_list #autor_post #infoautor #avatar img {
+#main #articles_list #autor_art #infoautor #avatar img {
 	margin-top: 5px;
 }
-#main #articles_list #autor_post #infoautor p {
+#main #articles_list #autor_art #infoautor p {
 	margin: 0px;
 }
 /**/
