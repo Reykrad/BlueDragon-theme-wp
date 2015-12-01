@@ -22,7 +22,6 @@ register_sidebar(array(
  'after_title' => '</h3>',
  ));
 
-
 // Permitir comentarios encadenados
 function enable_threaded_comments(){
     if (is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -30,36 +29,6 @@ function enable_threaded_comments(){
     }
 }
 add_action('get_header', 'enable_threaded_comments');
-
-#botones de edicion de articulos extra
-function habilitar_mas_botones($buttons) {
-$buttons[] = 'hr';
-$buttons[] = 'sub';
-$buttons[] = 'sup';
-$buttons[] = 'fontselect';
-$buttons[] = 'fontsizeselect';
-$buttons[] = 'cleanup';
-$buttons[] = 'styleselect';
-return $buttons;
-}
-add_filter("mce_buttons_3", "habilitar_mas_botones");
-
-
-#para que el editor acepte mas etiquetas html
-function cambiar_opciones_mce($initArray) {
-$ext = 'pre[id|name|class|style],iframe[align|longdesc| name|width|height|frameborder|scrolling|marginheight| marginwidth|src]';
-
-if ( isset( $initArray['extended_valid_elements'] ) ) {
-$initArray['extended_valid_elements'] .= ',' . $ext;
-} else {
-$initArray['extended_valid_elements'] = $ext;
-}
-
-return $initArray;
-}
-add_filter('tiny_mce_before_init', 'cambiar_opciones_mce');
-
-
 
 #para redireccionar si al buscar solo hay un resultado
 add_action('template_redirect', 'single_result');
@@ -71,7 +40,6 @@ wp_redirect( get_permalink( $wp_query->posts['0']->ID ) );
 }
 }
 }
-
 
 #para ver el numero de visitas sin plugin
 function getPostViews($postID){
@@ -96,7 +64,6 @@ $count++;
 update_post_meta($postID, $count_key, $count);
 }
 }
-
 
 #mostrar las vistas en el admin
 add_filter('manage_posts_columns', 'posts_column_views');
